@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div class="form-wrapper">
+        <div id="form">
+            <a href="https://www.csvjson.com/csv2json" target="_blank">Transformar a JSON</a>
+
+            <textarea id="dataInput"></textarea>
+            <select id="colorInput" type="text">
+                <option value="blue">Azul</option>
+                <option value="red">Rojo</option>
+                <option value="yellow">Amarillo</option>
+                <option value="green">Verde</option>
+            </select>
+
+            <button id="buttonSubmit">CARGAR</button>
+
+            <a id="cancelar">Cancelar</a>
+        </div>
+    </div>
+
+    <button class="buttonshowForm" id="showForm">load data</button>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSdD9RHz1vrCg7zHc03_JeYkblx1KiJiE&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+  </body>
+</html>
